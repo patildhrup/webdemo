@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- img tag Relative path -->
+    <img src="../../images/2.png" alt="login" width="200" height="300"> 
+
+    <!-- img tag Absolute path -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpZEneLh1WL_0kpeQEvbvHipkPx22W2hKMg&s" alt="this is a Absolute image path">
+
+    <!-- registration form -->
+    <form action="/sever">
+        <h1>Registration Form</h1>
+        <!-- user info -->
+        <div>
+            <label for="username">UserName:</label>
+            <input type="text" id="username" placeholder="Enter your name">
+            <br>
+            <label for="LastName">LastName:</label>
+            <input type="text" id="LastName" placeholder="Enter your surname">
+        </div>
+        <!-- user password -->
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" placeholder="Enter your Password">
+        </div>
+        <!--  Gender-->
+        <div>
+            <label for="Gender">Sex:</label>
+            <input type="radio" name="sex" id="sex" value="Male">
+            <label for="sex">Male</label>
+            <input type="radio" name="sex" id="sex" value="FeMale">
+            <label for="sex">FeMale</label>
+            <input type="radio" name="sex" id="sex" value="Other">
+            <label for="sex">Other</label>
+        </div>
+        <!-- checkBox -->
+        <div>
+            <label for="checkBox">Fruits</label>
+            <input type="checkbox" name="Fruit" value="mango" id="mango">
+            <label for="mango">mango</label>
+            <input type="checkbox" name="Fruit" value="banana" id="banana">
+            <label for="banana">banana</label>
+            <input type="checkbox" name="Fruit" value="orange" id="orange">
+            <label for="orange">orange</label>
+            <input type="checkbox" name="Fruit" value="none" id="none" checked>
+            <label for="none">none</label>
+        </div>
+        <!-- textarea -->
+         <div>
+            <label for="address">address:</label>
+            <textarea name="address" id="address" rows="5" cols="20"></textarea>
+         </div>
+
+         <!-- checkbox -->
+         <div>
+            <label for="country">select country</label>
+            <select name="country" id="country">
+                <option value="ind">india</option>
+                <option value="usa" selected>usa</option>
+                <option value="pak">pak</option>
+                <option value="china">china</option>
+                <option value="aust">aust</option>
+            </select>
+         </div>
+
+        <!-- submit -->
+        <div>
+            <label for="submit"></label>
+            <button type="submit" id="submit">submit</button>
+            <input type="button" value="btn">
+            <input type="submit" value="inputsubmit">
+        </div>
+    </form>
+    <hr>
+
+    <!-- table  -->
+    <table border="black">
+                <!-- table head -->
+                <tr>
+                    <th>Name</th>
+                    <th>age</th>
+                </tr>
+                <!-- table body -->
+                <tr>
+                    <td>omkar</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>yash</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>karthik</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>ganesh</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>rohit</td>
+                    <td>5</td>
+                </tr>
+            
+        
+    </table>
+
+    <!-- table2 -->
+
+    <table border="black">
+
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">address</th>
+                <th>ind</th>
+                <th>usa</th>
+                <th rowspan="2">age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>raju</td>
+                <td>1</td>
+                <td>0</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
